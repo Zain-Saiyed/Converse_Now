@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35sp"
+                android:fontFamily="@font/armata"
+                android:text="@string/common_signin_button_text"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Switch
+                android:id="@+id/switch_shared_pref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="8sp"
+                android:text="Shared Preferences  "
+                android:textAllCaps="true"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPassword"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="30dp"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btnRegisterHere"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnLogin"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="15dp"
+                android:text="Register" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

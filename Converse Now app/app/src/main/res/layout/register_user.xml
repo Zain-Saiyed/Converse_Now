@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register_User">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:contentDescription="Logo"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/txtEnterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/txtPasswordReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEnterName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:hint="Enter Passowrd"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/txtEmailReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:layout_below="@id/txtPasswordReg"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/btnRegisterHere"
+        android:layout_width="210sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:contentDescription="Register Button"
+        android:layout_below="@id/txtEmailReg"
+        android:text="Click To Register"
+        />
+
+    <Button
+        android:id="@+id/btnbackreg"
+        android:layout_width="210sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:contentDescription="Description"
+        android:layout_below="@id/btnRegisterHere"
+        android:text="Go Back"
+        />
+
+
+
+</RelativeLayout>
