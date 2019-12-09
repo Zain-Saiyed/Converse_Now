@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
 
+    TextView welcome_banner,signup_banner;
     Button buttonLogin, buttonRegister;
     EditText user_email, user_pass;
     Switch bool_shared_pref;
@@ -30,8 +33,11 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
 
+        welcome_banner = findViewById(R.id.tv_Welcomeback);
+        signup_banner = findViewById(R.id.tv_signIn);
         buttonLogin = findViewById(R.id.btnLogin) ;
         buttonRegister = findViewById(R.id.btnRegisterHere) ;
         user_email = findViewById(R.id.txtEmail) ;
@@ -40,6 +46,11 @@ public class Login extends AppCompatActivity {
 
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
+
+        welcome_banner.setLetterSpacing((float) 0.28);
+        signup_banner.setLetterSpacing((float) 0.15);
+
+
 
         if(shared_preferences.getLoginStatus(Login.this))
         {

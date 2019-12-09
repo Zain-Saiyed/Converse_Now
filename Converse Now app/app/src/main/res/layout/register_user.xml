@@ -5,74 +5,145 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradback_login"
     tools:context=".Register_User">
 
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="181dp"
-        android:layout_height="181dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80sp"
-        android:contentDescription="Logo"
-        app:srcCompat="@drawable/logo" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/txtEnterName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20sp"
-        android:ems="10"
-        android:hint="Enter Name"
-        android:inputType="textPersonName"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/txtPasswordReg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtEnterName"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20sp"
-        android:ems="10"
-        android:hint="Enter Passowrd"
-        android:inputType="textPassword"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/txtEmailReg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20sp"
-        android:ems="10"
-        android:layout_below="@id/txtPasswordReg"
-        android:hint="Enter Email"
-        android:inputType="textEmailAddress"/>
+                <TextView
+                    android:id="@+id/tv_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35sp"
+                    android:fontFamily="@font/armata"
+                    android:lineSpacingExtra="8sp"
+                    android:text="SIGN UP!"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnRegisterHere"
-        android:layout_width="210sp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20sp"
-        android:contentDescription="Register Button"
-        android:layout_below="@id/txtEmailReg"
-        android:text="Click To Register"
-        />
+                <TextView
+                    android:id="@+id/tv_reg_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35sp"
+                    android:fontFamily="@font/armata"
+                    android:text="Please enter the following details to Sign Up!"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#92FF0050"
+                    android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/btnbackreg"
-        android:layout_width="210sp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20sp"
-        android:contentDescription="Description"
-        android:layout_below="@id/btnRegisterHere"
-        android:text="Go Back"
-        />
 
+
+                <EditText
+                    android:id="@+id/txtEnterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/design_default_color_primary_dark"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/txtPasswordReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/design_default_color_primary_dark"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/txtEmailReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="E-mail address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/design_default_color_primary_dark"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnRegisterHere"
+                    android:layout_width="210sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/bordered_button"
+                    android:contentDescription="Register Button"
+                    android:fontFamily="@font/armata"
+                    android:paddingLeft="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="18dp"
+                    android:paddingBottom="10dp"
+                    android:text="SIGN UP"
+                    android:textAllCaps="true"
+                    android:textColor="#5D26C1"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnbackreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="50sp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Description"
+                    android:fontFamily="@font/armata"
+                    android:text="Already have a Account? Sign In"
+                    android:textColor="#4E4E4E"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

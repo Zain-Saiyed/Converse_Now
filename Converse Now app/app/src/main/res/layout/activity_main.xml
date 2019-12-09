@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradback_login"
     tools:context=".MainActivity">
 
 
@@ -36,16 +37,34 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|fill_vertical|center_horizontal"
                 android:layout_margin="30dp"
+                android:background="@drawable/bordered_button"
+                android:fontFamily="@font/armata"
                 android:foregroundGravity="center_vertical|center_horizontal"
-                android:text="CAPTURE IMAGE"></Button>
+                android:paddingLeft="18dp"
+                android:paddingTop="10dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="10dp"
+                android:shadowColor="#46858585"
+                android:text="CAPTURE IMAGE"
+                android:textColor="#5D26C1"
+                android:textStyle="bold"></Button>
+
             <Button
                 android:id="@+id/btn_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|fill_vertical|center_horizontal"
                 android:layout_margin="30dp"
+                android:background="@drawable/bordered_button"
+                android:fontFamily="@font/armata"
                 android:foregroundGravity="center_vertical|center_horizontal"
-                android:text="Submit Data"></Button>
+                android:paddingLeft="18dp"
+                android:paddingTop="10dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="10dp"
+                android:text="SUBMIT  IMAGE"
+                android:textColor="#5D26C1"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView1"
