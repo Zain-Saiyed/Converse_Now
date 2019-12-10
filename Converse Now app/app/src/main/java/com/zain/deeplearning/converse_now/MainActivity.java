@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     private Interpreter tflite;
     int[] intValues;
 
-
     Button photoButton , submitdata;
     TextView tv_result,tx1,tx2;
     ByteBuffer imgData = null;
@@ -56,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         this.imageView = this.findViewById(R.id.imageView1);
@@ -67,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
 //        tx1 =  this.findViewById(R.id.tv_result_organic);
 //        tx2 =  this.findViewById(R.id.tv_result_recycle);
 
-        photoButton.setOnClickListener(new View.OnClickListener()
-        {
+        photoButton.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.M)
             @Override
             public void onClick(View v)

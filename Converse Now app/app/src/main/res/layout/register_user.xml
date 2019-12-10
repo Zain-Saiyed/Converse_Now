@@ -49,62 +49,70 @@
                     android:textColor="#92FF0050"
                     android:textSize="12sp" />
 
-
-
                 <EditText
                     android:id="@+id/txtEnterName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
                     android:layout_marginTop="20sp"
-                    android:background="@android:color/transparent"
+                    android:layout_marginRight="50sp"
                     android:ems="10"
                     android:fontFamily="@font/armata"
-                    android:hint="Full Name"
+                    android:hint="First Name "
                     android:inputType="textPersonName"
-                    android:textColor="@color/colorAccent"
-                    android:textColorHighlight="@color/design_default_color_primary_dark"
-                    android:textColorHint="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/et_middle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Middle Name (Optional)"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Last Name "
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txtEmailReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="E-Mail Address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/txtPasswordReg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
                     android:layout_marginTop="20sp"
-                    android:background="@android:color/transparent"
+                    android:layout_marginRight="50sp"
                     android:ems="10"
                     android:fontFamily="@font/armata"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/colorAccent"
-                    android:textColorHighlight="@color/design_default_color_primary_dark"
-                    android:textColorHint="@android:color/black"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/txtEmailReg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginTop="20sp"
-                    android:background="@android:color/transparent"
-                    android:ems="10"
-                    android:fontFamily="@font/armata"
-                    android:hint="E-mail address"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/colorAccent"
-                    android:textColorHighlight="@color/design_default_color_primary_dark"
-                    android:textColorHint="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/btnRegisterHere"

@@ -32,7 +32,7 @@ public class SubmitData extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         setContentView(R.layout.submit_data);
 
         storage_ref= FirebaseStorage.getInstance().getReference("ASL Images");

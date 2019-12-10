@@ -9,7 +9,6 @@
     tools:context=".MainActivity">
 
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -30,6 +29,12 @@
                 android:text="Tap capture Image to capture and predict sign!"
                 android:textAlignment="center"
                 android:textColor="@color/colorAccent" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="15dp"
+                android:layout_gravity="center_vertical|center_horizontal"></ImageView>
 
             <Button
                 android:id="@+id/btn_classify"
@@ -47,6 +52,7 @@
                 android:shadowColor="#46858585"
                 android:text="CAPTURE IMAGE"
                 android:textColor="#5D26C1"
+                android:elevation="5dp"
                 android:textStyle="bold"></Button>
 
             <Button
@@ -63,14 +69,9 @@
                 android:paddingRight="18dp"
                 android:paddingBottom="10dp"
                 android:text="SUBMIT  IMAGE"
+                android:elevation="10dp"
                 android:textColor="#5D26C1"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center_horizontal"></ImageView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,7 +86,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-smallcaps"
+                    android:fontFamily="@font/armata"
                     android:text="Predicted Result : "
                     android:textColor="@android:color/holo_red_dark"
                     android:textSize="18sp" />
@@ -96,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:fontFamily="sans-serif-smallcaps"
+                    android:fontFamily="@font/armata"
                     android:text="NIL"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />

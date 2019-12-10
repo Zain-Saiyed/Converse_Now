@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="35sp"
                     android:fontFamily="@font/armata"
-                    android:text="Select an image to Upload"
+                    android:text="Choose an image to Upload"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="#92FF0050"
