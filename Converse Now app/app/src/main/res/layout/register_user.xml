@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50sp"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="12sp"
                     android:layout_marginRight="50sp"
                     android:ems="10"
                     android:fontFamily="@font/armata"
@@ -80,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50sp"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="12sp"
                     android:layout_marginRight="50sp"
                     android:ems="10"
                     android:fontFamily="@font/armata"
@@ -93,7 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50sp"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="12sp"
                     android:layout_marginRight="50sp"
                     android:ems="10"
                     android:fontFamily="@font/armata"
@@ -106,7 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50sp"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="12sp"
                     android:layout_marginRight="50sp"
                     android:ems="10"
                     android:fontFamily="@font/armata"
@@ -149,6 +149,31 @@
                     android:text="Already have a Account? Sign In"
                     android:textColor="#4E4E4E"
                     android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:fontFamily="@font/armata"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Created  by  Zainuddin Saiyed"
+                    android:textColor="#302b63"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="50sp"
+                    android:fontFamily="@font/armata"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Contact: "
+                    android:textColor="#302b63"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

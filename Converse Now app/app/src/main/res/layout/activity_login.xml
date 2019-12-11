@@ -139,6 +139,31 @@
                     android:textSize="12sp" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/armata"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Created  by  Zainuddin Saiyed"
+                android:textColor="#302b63"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="50sp"
+                android:fontFamily="@font/armata"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Contact: "
+                android:textColor="#302b63"
+                android:textStyle="bold"
+                android:visibility="invisible" />
         </LinearLayout>
     </ScrollView>
 

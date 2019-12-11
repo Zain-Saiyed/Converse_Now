@@ -50,7 +50,10 @@ public class SubmitData extends AppCompatActivity {
                 Toast.makeText(SubmitData.this, "Image upload in process!", Toast.LENGTH_LONG).show();
             }
             else {
-                upload_image();
+                if(Image_View.getDrawable() != null)
+                    upload_image();
+                else
+                    Toast.makeText(SubmitData.this, "Please choose an Image to upload", Toast.LENGTH_SHORT).show();
             }
         });
     }
